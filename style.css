@@ -1,0 +1,37 @@
+/*
+Theme Name: CMO
+Theme URI: http://anditthemes.com/cmo
+Author: AndIT Themes
+Author URI: http://anditthemes.com
+Description: CMO business consulting multipurpose WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: corporate, multipurpose, blog, business, news
+Text Domain: cmo
+*/
+
+
+/* CMO Theme */
+
+a:hover {
+    text-decoration: none;
+}
+
+.screen-reader-text {
+    display: none;
+}
+
+.page-title.breadcamp h1{
+	font-size: 50px;
+	line-height: 60px;
+}
+
+.page-path h2{
+	color: #fff;
+	margin-bottom: 70px;
+}
+
+.page{
+	padding-bottom: 80px;
+}
