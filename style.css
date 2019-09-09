@@ -17,21 +17,34 @@ Text Domain: cmo
 a:hover {
     text-decoration: none;
 }
-
 .screen-reader-text {
     display: none;
 }
-
 .page-title.breadcamp h1{
 	font-size: 50px;
 	line-height: 60px;
 }
-
 .page-path h2{
 	color: #fff;
 	margin-bottom: 70px;
 }
-
 .page{
 	padding-bottom: 80px;
+}
+
+.blog-description img{
+	width: 100%;
+	height: auto;
+}
+.leave-a-comment li{
+	list-style: none;
+}
+.comment-author img{
+	border-radius: 50%;
+}
+.error_title{
+	font-size: 70px;
+	text-align: center;
+	color: #FF5E14;
+	margin-bottom: 100px;
 }

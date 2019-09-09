@@ -61,7 +61,13 @@
                     <?php
                         if ( is_home() ) {
                             get_template_part( "template-parts/home/home" );
-                        }else{
+                        }elseif (is_archive()) {
+                           get_template_part( "template-parts/common/breadcamp-archive" );
+                        }   
+                        elseif (is_404()) {
+                           get_template_part( "template-parts/common/breadcamp-404" );
+                        }
+                        else{
                             get_template_part( "template-parts/common/breadcamp" );
                         }
                     ?>
