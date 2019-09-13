@@ -23,12 +23,16 @@
                     echo $cmo_menu;
                 ?>
                 <div class="menu-search-icon text-right">
-                    <div class="search-icon">
-                        <div class="search">
-                            <input type="text" placeholder="Search..">
-                            <div class="icon"></div>
+                    <?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
+
+                    <form role="search" method="get" class="header__search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <div class="search-icon">
+                            <div id="search">
+                                <input type="search" id="<?php echo $unique_id; ?>" placeholder="<?php echo esc_attr_x( 'Search..', 'placeholder', 'cmo' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
+                                <div class="icon"></div>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <div id="mySidebar" class="sidebar">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                         <?php

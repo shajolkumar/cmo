@@ -50,7 +50,7 @@
 
         //Search Icon Page Search
         $('.icon').click(function(){
-            $('.search').toggleClass('active');
+            $('#search').toggleClass('active');
         });
 
         //Bottom to top  Plugin

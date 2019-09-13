@@ -299,9 +299,10 @@ Search-Bar-Start*/
 .search-icon {
     position: relative;
     right: 30px;
+    margin-top: 10px;
 }
 
-.search {
+#search {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -311,7 +312,7 @@ Search-Bar-Start*/
     transition: width 0.5s;
 }
 
-.search.active {
+#search.active {
     width: 200px;
     transform: translate(-85%, -50%);
     border: 1px solid #fff;
@@ -319,7 +320,7 @@ Search-Bar-Start*/
     border-radius: 4px;
 }
 
-.search input {
+#search input {
     position: absolute;
     top: 0px;
     left: 10px;
@@ -332,7 +333,7 @@ Search-Bar-Start*/
     background: transparent;
 }
 
-.search.active .icon:before {
+#search.active .icon:before {
     position: absolute;
     content: "";
     top: 4px;
@@ -347,7 +348,7 @@ Search-Bar-Start*/
     border-right: 2px solid #fff;
 }
 
-.search.active .icon:after {
+#search.active .icon:after {
     position: absolute;
     content: "";
     top: 20px;
@@ -386,7 +387,7 @@ Search-Bar-Start*/
     transition: 0.5s;
 }
 
-.search.active .icon {
+#search.active .icon {
     background-color: #FF5E14;
     position: absolute;
     width: 45px;
