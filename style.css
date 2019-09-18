@@ -28,9 +28,6 @@ a:hover {
 	color: #fff;
 	margin-bottom: 70px;
 }
-.page{
-	padding-bottom: 80px;
-}
 
 .blog-description img{
 	width: 100%;
@@ -47,4 +44,8 @@ a:hover {
 	text-align: center;
 	color: #FF5E14;
 	margin-bottom: 100px;
+}
+.ca-single-img img{
+	height: 320px;
+	width: auto;
 }

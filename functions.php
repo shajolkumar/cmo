@@ -10,10 +10,10 @@ function cmo_theme_setup() {
     load_theme_textdomain( "cmo" );
     add_theme_support( "post-thumbnails" );
     add_theme_support( "title-tag" );
-    add_theme_support("custom-header", $cmo_custom_header_details);
+    add_theme_support( "custom-header", $cmo_custom_header_details);
     add_theme_support( 'html5', array( 'search-form', 'comment-list' ) );
     add_theme_support( "post-formats", array( "image", "gallery", "quote", "audio", "video", "link" ) );
-    add_theme_support("custom-background");
+    add_theme_support( "custom-background" );
     register_nav_menu( "mainmenu", __( "Main Menu", "cmo" ) );
     register_nav_menu( "sidemenu", __( "Sidebar Menu", "cmo" ) );
     add_image_size( "cmo-home-square", 800, 400, true );
