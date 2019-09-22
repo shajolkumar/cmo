@@ -64,10 +64,11 @@ get_header(); ?>
 					                    <!--start-author-social-media-->
 					                    <div class="author-social-icon">
 					                    	<?php
-					                            $cmo_author_facebook  = get_field( "facebook", "user_" . get_the_author_meta( "ID" ) );
-					                            $cmo_author_instagram = get_field( "instagram", "user_" . get_the_author_meta( "ID" ) );
-					                            $cmo_author_twitter   = get_field( "twitter", "user_" . get_the_author_meta( "ID" ) );
-					                            $cmo_author_linkedin   = get_field( "linkedin", "user_" . get_the_author_meta( "ID" ) );
+											global $user_id;
+					                            $cmo_author_facebook  = get_the_author_meta( 'facebook_url', $user_id );
+					                            $cmo_author_instagram = get_the_author_meta( 'instagram_url', $user_id );
+					                            $cmo_author_twitter   = get_the_author_meta( 'twitter_url', $user_id );
+					                            $cmo_author_linkedin   = get_the_author_meta( 'linkedin_url', $user_id );
 					                        ?>
 					                        <ul>
 					                        	<?php if ( $cmo_author_facebook ): ?>
